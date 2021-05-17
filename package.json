@@ -1,0 +1,25 @@
+{
+  "name": "yarn-gatsby-monorepo-example",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev:shared": "cd packages/shared && yarn develop",
+    "dev:site1": "cd packages/site1 && yarn develop",
+    "dev:site2": "cd packages/site2 && yarn develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Takazudo/gatsby-monorepo-example.git"
+  },
+  "author": "Takazudo",
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^3.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
